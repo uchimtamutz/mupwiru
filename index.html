@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Our Features</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #4a5568;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .feature-content {
+            padding: 20px;
+        }
+        
+        .feature-title {
+            font-size: 1.3rem;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .feature-desc {
+            color: #4a5568;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: none;
+            min-width: 200px;
+        }
+        
+        .btn-primary {
+            background: #4361ee;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #3a56d4;
+        }
+        
+        .btn-facebook {
+            background: #3b5998;
+            color: white;
+        }
+        
+        .btn-facebook:hover {
+            background: #334d84;
+        }
+        
+        .btn-secondary {
+            background: #ffffff;
+            color: #4361ee;
+            border: 2px solid #4361ee;
+        }
+        
+        .btn-secondary:hover {
+            background: #f0f4ff;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto 40px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Koneksheni zote humu.</h1>
+            <p class="subtitle">koneksheni za mastaa wote humu.</p>
+        </header>
+        <div class="features">
+            
+            
+            <div class="feature-card" onclick="redirect()">
+                <img src="https://wakubeti.pro/uploads/block_images/29a5ff7100f0d56367f89e3f5ebd5828.gif" alt="Feature 3" class="feature-img">
+                <div class="feature-content">
+                    <h3 class="feature-title">Kachangamsha mji asubuhi tuu tizama yote</h3>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="buttons">
+            
+            
+            <button class="btn btn-facebook" onclick="redirect()">
+                <i class="fab fa-facebook-f"></i> Jiunge Group la connection zote
+            </button>
+            <button class="btn btn-facebook" onclick="redirect()">
+                <i class="fab fa-facebook-f"></i> Jiunge group la malaya wote
+            </button>
+            <button class="btn btn-facebook" onclick="redirect()">
+                <i class="fab fa-facebook-f"></i> Jiunge Group La mashoga wote
+            </button>
+            
+            
+        </div>
+        
+        <div class="features">
+            <div class="feature-card" onclick="redirect()">
+                <img src="https://wakubeti.pro/uploads/block_images/bd6534d82f427155814acd6aa4d82c19.gif" alt="Feature 1" class="feature-img">
+                <div class="feature-content">
+                    <h3 class="feature-title">Anapenda kulmaba koni</h3>
+                    
+                </div>
+            </div>
+            
+            <div class="feature-card" onclick="redirect()">
+                <img src="https://wakubeti.pro/uploads/block_images/8ed86b7b6f334b256d08ef6e8fcb98b3.gif" alt="Feature 2" class="feature-img">
+                <div class="feature-content">
+                    <h3 class="feature-title">Kwani hii bado hujaiona,</h3>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        
+        
+        <footer>
+            <p>© 2025 . All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function redirect() {
+            // Redirect to example.com when called
+            window.location.href = 'https://example.com';
+        }
+    </script>
+</body>
+</html>
